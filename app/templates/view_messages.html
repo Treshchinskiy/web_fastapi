@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все сообщения</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Все сообщения</h1>
+    <ul>
+        {% for message in messages %}
+            <li>{{ message['content'] }}</li>
+        {% endfor %}
+    </ul>
+    <div>
+        <a href="/">
+            <button>Назад на главную</button>
+        </a>
+    </div>
+</body>
+</html>

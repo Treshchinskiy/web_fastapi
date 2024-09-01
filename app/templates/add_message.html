@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить сообщение</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Написать новое сообщение</h1>
+    <form action="/api/v1/message/" method="post">
+        <label for="content">Сообщение:</label>
+        <textarea id="content" name="content" required></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+    <div>
+        <a href="/">
+            <button>Назад на главную</button>
+        </a>
+    </div>
+</body>
+</html>
